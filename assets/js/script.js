@@ -18,7 +18,8 @@ setInterval(()=> {
   ar_minute.style.transform = `rotate(${getKeyPos(minutes, 60)}deg)`;
   ar_second.style.transform = `rotate(${getKeyPos(seconds, 60)}deg)`;
 
-  sound.play();
+  sound.autoplay = true;
+  sound.load();
 
   marks.style.stroke        = getRandomColor();
 
